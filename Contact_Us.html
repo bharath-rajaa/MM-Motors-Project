@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #1a181d;
+        }
+
+        .banner-img img {
+            width: 50%;
+            height: 150px;
+        }
+
+        .bottom-img img {
+            width: 50%;
+            height: 50%;
+        }
+
+        .popupinner {
+            background: #fff;
+            padding: 20px;
+            margin: 20px auto;
+            width: 90%;
+            max-width: 500px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #c93a3a;
+            text-align: center;
+            text-shadow: 2px 3px 4px rgba(7, 6, 6, 0.5);
+        }
+
+        .inputvalue {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .flex-container {
+            display: flex;
+            gap: 10px;
+        }
+
+        .flex-container .inputvalue {
+            flex: 1;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        input,
+        select {
+            padding: 10px;
+            border: 3px solid #ccc;
+            border-radius: 15px;
+            width: 90%;
+        }
+
+        .mobiwrap {
+            position: relative;
+        }
+
+        .countryno {
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-weight: bold;
+        }
+
+        .conpopbtn {
+            background-color: #e81822;
+            color: rgb(255, 255, 255);
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .cancelbtn {
+            background-color: gray;
+        }
+
+        .closebtn {
+            display: flex;
+            gap: 10px;
+        }
+
+        .backbtn {
+            background-color: #555;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner-img"><img src="http://mahindraimages.dealersites.in/connecto/images/banner.jpg"></div>
+
+    <form>
+        <div class="title">How can we help you?</div>
+        <div class="popupinner">
+            <div class="inputvalue">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Name" required>
+            </div>
+            <div class="inputvalue">
+                <label>Mobile</label>
+                <div class="mobiwrap">
+                    <input type="text" placeholder="Phone Number" required>
+                </div>
+            </div>
+            <div class="inputvalue">
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Email">
+            </div>
+            <div class="flex-container">
+                <div class="inputvalue">
+                    <label>Model</label>
+                    <select name="model_id">
+                        <option value="">Select Model</option>
+                        <option value="3077">Mahindra Thar ROXX</option>
+                        <option value="2405">Mahindra Thar</option>
+                        <option value="2420">Mahindra XUV700</option>
+                        <option value="3345">Mahindra XUV 3XO</option>
+                        <option value="3070">Mahindra Scorpio N</option>
+                        <option value="3251">Mahindra Scorpio</option>
+                        <option value="3086">Mahindra Bolero Neo</option>
+                        <option value="3242">Mahindra Bolero Neo Plus</option>
+                        <option value="4100">Mahindra BE 6</option>
+                        <option value="4099">Mahindra XEV 9e</option>
+                        <option value="2421">Mahindra XUV400 EV</option>
+                    </select>
+                </div>
+                <div class="inputvalue">
+                    <label>Outlet</label>
+                    <select name="outlet_id">
+                        <option value="">Select Outlet</option>
+                        <option value="2387">MM Motors - Iyyapanthangal</option>
+                        <option value="2440">MM Motors - Mount Road</option>
+                        <option value="2439">MM Motors - Purasawalkam</option>
+                        <option value="2618">MM Motors - Selaiyur</option>
+                        <option value="2619">MM Motors - Teynampet</option>
+                        <option value="2472">MM Motors - Poonnamallee</option>
+
+                    </select>
+                </div>
+            </div>
+            <div class="closebtn">
+                <button class="conpopbtn cancelbtn" type="button">Cancel</button>
+                <button class="conpopbtn" type="submit">Request Callback</button>
+            </div>
+            <a href="./FNT_PG1.html" style="text-decoration: none; color: white;"></a><button class="backbtn"
+                type="button">
+                Back</button></a>
+        </div>
+    </form>
+
+    <div class="bottom-img"><img src="./Images/BANNER/img1.png"></div>
+</body>
+
+</html>
